@@ -1,5 +1,3 @@
-//Kosong ya bund
-//Cara ngerun disini gimana 💀
 #include <iostream>
 #include <windows.h>
 #include <limits> // Untuk numeric_limits
@@ -619,10 +617,17 @@ int main(){
                 }
             }
         }
-        cout << "+-----------------------------------------------------------------------+" << endl;
-        cout << "|              Terima kasih telah menggunakan layanan kami              |" << endl;
-        cout << "|                      Sampai jumpa di lain waktu!                      |" << endl;
-        cout << "+-----------------------------------------------------------------------+" << endl;
+        if (pilihan <= 0 || pilihan > 5){
+            SetConsoleTextAttribute(hConsole, 04);
+            cout << "   Inputan dianggap anomali berbahaya. Anda akan kami keluarkan secara paksa! " << endl;
+            SetConsoleTextAttribute(hConsole, 07);
+            cout << endl;
+        }else{
+            cout << "+-----------------------------------------------------------------------+" << endl;
+            cout << "|              Terima kasih telah menggunakan layanan kami              |" << endl;
+            cout << "|                      Sampai jumpa di lain waktu!                      |" << endl;
+            cout << "+-----------------------------------------------------------------------+" << endl;
+        }
     }
     return 0;
 }
