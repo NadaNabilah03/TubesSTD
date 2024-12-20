@@ -9,7 +9,7 @@
 #define firstRelasi(K) K->firstRelasi
 
 //Project SLL
-#define infoProject(P) P->infoProject // yang gini" ga perlu ga sih Thir? tinggal pointer ke infotype aja ga sih?; oh iya
+#define infoProject(P) P->infoProject
 #define nextProject(P) P->nextProject
 
 //Lists
@@ -34,7 +34,7 @@ struct dataKaryawan{
     string jabatan;
     string department;
     int gaji;
-}; //parent DLL cuy, pake prev; iya ini gw bingung, lu pake yang mll gw pake yg graf wkwk
+};
 
 typedef dataKaryawan infoTypeKaryawan;
 
@@ -53,7 +53,7 @@ struct ListKaryawan{
 struct relasi{
     adrRelasi nextRelasi;
     adrProject relasiProject;
-}; //gtw ini bener ga
+};
 
 //Punya CaramelXD
 
@@ -68,7 +68,7 @@ struct dataProject{
 typedef dataProject infoTypeProject;
 
 struct project{
-    infoTypeProject infoProject; //ini buat apa Thir?; biar di parameter ga kebanyakan; oh okei
+    infoTypeProject infoProject; 
     adrProject nextProject;
 };
 
@@ -135,9 +135,6 @@ void deleteProjectTertentu(ListKaryawan LK, ListProject &LP, adrProject &P, stri
 // Hardcode
 void inputProject(ListProject &LP);
 void inputKaryawan(ListKaryawan &LK);
-
-//THIR inget ga gmn caranya ngasih relasi?; nanti aja, kerjain yg gampang gampang dlu aja :P; apa pake yang kayak graph aja? masuk akal ga sih?; bisa
-//Ini kalo parent nya dll, nyambung ke child nya juga dll atau engga Thir?; waduh gtw tuh nanti tanya aja ke MAM
 
 //menus
 void menuAwal();
