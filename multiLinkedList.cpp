@@ -328,7 +328,6 @@
     }
 }
 
-//CEK ada bug kayanya
 /*20*/void delete_semua_karyawan(ListKaryawan &LK){
     adrKaryawan K = firstKaryawan(LK);
     if (K == NULL){
